@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8ADEE4B03B2946976C441AF /* libPods-Youtube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E564543B5C9D094938EE0F5 /* libPods-Youtube.a */; };
+		BD2DB7861D92941F00615D8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2DB7851D92941F00615D8C /* main.m */; };
+		BD2DB7891D92941F00615D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2DB7881D92941F00615D8C /* AppDelegate.m */; };
+		BD2DB78C1D92941F00615D8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2DB78B1D92941F00615D8C /* ViewController.m */; };
+		BD2DB78F1D92941F00615D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2DB78D1D92941F00615D8C /* Main.storyboard */; };
+		BD2DB7911D92942000615D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2DB7901D92942000615D8C /* Assets.xcassets */; };
+		BD2DB7941D92942000615D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2DB7921D92942000615D8C /* LaunchScreen.storyboard */; };
+		BDD444201D93137D003022AC /* YoutubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD4441F1D93137D003022AC /* YoutubeView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		748ADB4EE017912A15825FEB /* Pods-Youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Youtube/Pods-Youtube.debug.xcconfig"; sourceTree = "<group>"; };
+		8E564543B5C9D094938EE0F5 /* libPods-Youtube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Youtube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9447E2A437B60C688400B4AB /* Pods-Youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youtube/Pods-Youtube.release.xcconfig"; sourceTree = "<group>"; };
+		BD2DB7811D92941F00615D8C /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2DB7851D92941F00615D8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD2DB7871D92941F00615D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD2DB7881D92941F00615D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD2DB78A1D92941F00615D8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD2DB78B1D92941F00615D8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD2DB78E1D92941F00615D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD2DB7901D92942000615D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD2DB7931D92942000615D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD2DB7951D92942000615D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD4441F1D93137D003022AC /* YoutubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeView.m; sourceTree = "<group>"; };
+		BDD444211D9313D8003022AC /* YoutubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoutubeView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD2DB77E1D92941F00615D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8ADEE4B03B2946976C441AF /* libPods-Youtube.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2E6377D28B39B4EF6FF6728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748ADB4EE017912A15825FEB /* Pods-Youtube.debug.xcconfig */,
+				9447E2A437B60C688400B4AB /* Pods-Youtube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD2DB7781D92941F00615D8C = {
+			isa = PBXGroup;
+			children = (
+				BD2DB7831D92941F00615D8C /* Youtube */,
+				BD2DB7821D92941F00615D8C /* Products */,
+				B2E6377D28B39B4EF6FF6728 /* Pods */,
+				BF04730CDA81CBA3A90F22F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD2DB7821D92941F00615D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD2DB7811D92941F00615D8C /* Youtube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD2DB7831D92941F00615D8C /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				BDD444221D931445003022AC /* YoutubeView */,
+				BD2DB7871D92941F00615D8C /* AppDelegate.h */,
+				BD2DB7881D92941F00615D8C /* AppDelegate.m */,
+				BD2DB78A1D92941F00615D8C /* ViewController.h */,
+				BD2DB78B1D92941F00615D8C /* ViewController.m */,
+				BD2DB78D1D92941F00615D8C /* Main.storyboard */,
+				BD2DB7901D92942000615D8C /* Assets.xcassets */,
+				BD2DB7921D92942000615D8C /* LaunchScreen.storyboard */,
+				BD2DB7951D92942000615D8C /* Info.plist */,
+				BD2DB7841D92941F00615D8C /* Supporting Files */,
+			);
+			path = Youtube;
+			sourceTree = "<group>";
+		};
+		BD2DB7841D92941F00615D8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD2DB7851D92941F00615D8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDD444221D931445003022AC /* YoutubeView */ = {
+			isa = PBXGroup;
+			children = (
+				BDD444211D9313D8003022AC /* YoutubeView.h */,
+				BDD4441F1D93137D003022AC /* YoutubeView.m */,
+			);
+			name = YoutubeView;
+			sourceTree = "<group>";
+		};
+		BF04730CDA81CBA3A90F22F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E564543B5C9D094938EE0F5 /* libPods-Youtube.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD2DB7801D92941F00615D8C /* Youtube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD2DB7981D92942000615D8C /* Build configuration list for PBXNativeTarget "Youtube" */;
+			buildPhases = (
+				B818E41C14B064BCC002FE4D /* [CP] Check Pods Manifest.lock */,
+				BD2DB77D1D92941F00615D8C /* Sources */,
+				BD2DB77E1D92941F00615D8C /* Frameworks */,
+				BD2DB77F1D92941F00615D8C /* Resources */,
+				FF32065BE5A809B774BD9C83 /* [CP] Embed Pods Frameworks */,
+				CCBBBCD3DA1A88762B4F454C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Youtube;
+			productName = Youtube;
+			productReference = BD2DB7811D92941F00615D8C /* Youtube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD2DB7791D92941F00615D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Вадим Коппе";
+				TargetAttributes = {
+					BD2DB7801D92941F00615D8C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7JK729JZ89;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD2DB77C1D92941F00615D8C /* Build configuration list for PBXProject "Youtube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD2DB7781D92941F00615D8C;
+			productRefGroup = BD2DB7821D92941F00615D8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD2DB7801D92941F00615D8C /* Youtube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD2DB77F1D92941F00615D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2DB7941D92942000615D8C /* LaunchScreen.storyboard in Resources */,
+				BD2DB7911D92942000615D8C /* Assets.xcassets in Resources */,
+				BD2DB78F1D92941F00615D8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B818E41C14B064BCC002FE4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBBBCD3DA1A88762B4F454C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Youtube/Pods-Youtube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF32065BE5A809B774BD9C83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Youtube/Pods-Youtube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD2DB77D1D92941F00615D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD444201D93137D003022AC /* YoutubeView.m in Sources */,
+				BD2DB78C1D92941F00615D8C /* ViewController.m in Sources */,
+				BD2DB7891D92941F00615D8C /* AppDelegate.m in Sources */,
+				BD2DB7861D92941F00615D8C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD2DB78D1D92941F00615D8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD2DB78E1D92941F00615D8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD2DB7921D92942000615D8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD2DB7931D92942000615D8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD2DB7961D92942000615D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD2DB7971D92942000615D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD2DB7991D92942000615D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748ADB4EE017912A15825FEB /* Pods-Youtube.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JK729JZ89;
+				INFOPLIST_FILE = Youtube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akovana.Youtube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD2DB79A1D92942000615D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9447E2A437B60C688400B4AB /* Pods-Youtube.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JK729JZ89;
+				INFOPLIST_FILE = Youtube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akovana.Youtube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD2DB77C1D92941F00615D8C /* Build configuration list for PBXProject "Youtube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2DB7961D92942000615D8C /* Debug */,
+				BD2DB7971D92942000615D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD2DB7981D92942000615D8C /* Build configuration list for PBXNativeTarget "Youtube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2DB7991D92942000615D8C /* Debug */,
+				BD2DB79A1D92942000615D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD2DB7791D92941F00615D8C /* Project object */;
+}
