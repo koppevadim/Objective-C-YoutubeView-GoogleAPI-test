@@ -25,10 +25,17 @@ YoutubeView *youtube;
     [self addChildViewController:youtube];
     [self.view addSubview:youtube.view];
     [youtube didMoveToParentViewController:self];
+    
+    [youtube setupVideoId:@"GBa2sS2EKAg"];
 }
 
 - (void) onYoutubeBecomeReady:(YoutubeView *)setter
 {
+    [youtube playVideo];
+    
+    [youtube fullscreenVideo:YES];
+    
+    [youtube qualityVideo:kYTPlaybackQualityAuto];
 }
 
 - (void) onYoutubeDidChangeToState:(YoutubeView *)setter state:(YTPlayerState)state

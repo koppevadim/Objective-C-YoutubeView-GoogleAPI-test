@@ -17,7 +17,6 @@
 @interface YoutubeView : UIViewController <YTPlayerViewDelegate> {
     YTPlayerView *youtubePlayerView;
     
-    @public NSString *youtubeVideoId;
     @public CGFloat paddingTop;
     @public CGFloat paddingBottom;
 }
@@ -27,8 +26,9 @@
 // Expose Methods
 - (void) playVideo;
 - (void) pauseVideo;
-- (void) qualityVideo:(YTPlaybackQuality)quality;
 - (void) seekToSeconds:(CGFloat)seekToSeconds;
+- (void) setupVideoId:(NSString*)youtubeVideoId;
+- (void) qualityVideo:(YTPlaybackQuality)quality;
 - (void) fullscreenVideo:(BOOL)activateFullscreenVideo;
 
 @end

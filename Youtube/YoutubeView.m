@@ -20,20 +20,11 @@ NSLayoutConstraint *bottomConstraint;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    youtubeVideoId = @"GBa2sS2EKAg";
     paddingTop = 100;
     paddingBottom = 100;
     
     // disable interface interactions
     self.view.userInteractionEnabled = NO;
-    
-    NSDictionary *playerVars = @{
-                                 @"controls" : @0,
-                                 @"playsinline" : @1,
-                                 @"autohide" : @1,
-                                 @"showinfo" : @0,
-                                 @"modestbranding" : @1
-                                 };
     
     youtubePlayerView = [[YTPlayerView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
@@ -82,9 +73,6 @@ NSLayoutConstraint *bottomConstraint;
     [self.view addConstraint:bottomConstraint];
     
     youtubePlayerView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    // Load youtube video by youtube video id with parametrs
-    [youtubePlayerView loadWithVideoId:youtubeVideoId playerVars:playerVars];
 }
 
 /**
@@ -94,10 +82,6 @@ NSLayoutConstraint *bottomConstraint;
  */
 -(void)playerViewDidBecomeReady:(YTPlayerView *)playerView
 {
-    [self playVideo];
-    
-    [self qualityVideo:kYTPlaybackQualityAuto];
-    
     [self.delegate onYoutubeBecomeReady:self];
 }
 
@@ -162,6 +146,25 @@ NSLayoutConstraint *bottomConstraint;
 - (void) pauseVideo
 {
     [youtubePlayerView pauseVideo];
+}
+
+/**
+ * Setup link to Youtube video
+ *
+ * @param youtubeVideoId video link
+ */
+- (void) setupVideoId:(NSString*)youtubeVideoId
+{
+    NSDictionary *playerVars = @{
+                                 @"controls" : @0,
+                                 @"playsinline" : @1,
+                                 @"autohide" : @1,
+                                 @"showinfo" : @0,
+                                 @"modestbranding" : @1
+                                 };
+    
+    // Load youtube video by youtube video id with parametrs
+    [youtubePlayerView loadWithVideoId:youtubeVideoId playerVars:playerVars];
 }
 
 /**
