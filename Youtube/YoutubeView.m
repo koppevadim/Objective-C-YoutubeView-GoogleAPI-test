@@ -187,7 +187,7 @@ NSLayoutConstraint *bottomConstraint;
 /**
  * quality of Youtube video
  *
- * @param quality
+ * @param quality value
  */
 - (void) qualityVideo:(YTPlaybackQuality)quality
 {
