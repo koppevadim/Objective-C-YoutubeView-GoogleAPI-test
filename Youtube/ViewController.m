@@ -9,33 +9,79 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@end
 
-YoutubeView *youtube;
+@property (nonatomic) YoutubeView *youtube;
+
+@end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    youtube = [[YoutubeView alloc] init];
+    self.youtube = [[YoutubeView alloc] init];
     
-    youtube.delegate = self;
+    self.youtube.delegate = self;
     
-    [self addChildViewController:youtube];
-    [self.view addSubview:youtube.view];
-    [youtube didMoveToParentViewController:self];
+    [self.view addSubview:self.youtube];
     
-    [youtube setupVideoId:@"GBa2sS2EKAg"];
+    [self.youtube setupVideoId:@"GBa2sS2EKAg"];
+    
+    NSLayoutConstraint *topConstraint;
+    NSLayoutConstraint *leftConstraint;
+    NSLayoutConstraint *rightConstraint;
+    NSLayoutConstraint *bottomConstraint;
+    
+    // Setting up left constraint
+    leftConstraint = [NSLayoutConstraint constraintWithItem:self.youtube
+                                                  attribute:NSLayoutAttributeLeft
+                                                  relatedBy:NSLayoutRelationEqual
+                                                     toItem:self.view
+                                                  attribute:NSLayoutAttributeLeft
+                                                 multiplier:1.0
+                                                   constant:0];
+    [self.view addConstraint:leftConstraint];
+    
+    // Setting up right constraint
+    rightConstraint = [NSLayoutConstraint constraintWithItem:self.youtube
+                                                   attribute:NSLayoutAttributeRight
+                                                   relatedBy:NSLayoutRelationEqual
+                                                      toItem:self.view
+                                                   attribute:NSLayoutAttributeRight
+                                                  multiplier:1.0
+                                                    constant:0];
+    [self.view addConstraint:rightConstraint];
+    
+    // Setting up top constraint
+    topConstraint = [NSLayoutConstraint constraintWithItem:self.youtube
+                                                 attribute:NSLayoutAttributeTop
+                                                 relatedBy:NSLayoutRelationEqual
+                                                    toItem:self.view
+                                                 attribute:NSLayoutAttributeTop
+                                                multiplier:1.0
+                                                  constant:0];
+    [self.view addConstraint:topConstraint];
+    
+    // Setting up bottom constraint
+    bottomConstraint = [NSLayoutConstraint constraintWithItem:self.youtube
+                                                    attribute:NSLayoutAttributeBottom
+                                                    relatedBy:NSLayoutRelationEqual
+                                                       toItem:self.view
+                                                    attribute:NSLayoutAttributeBottom
+                                                   multiplier:1.0
+                                                     constant:0];
+    [self.view addConstraint:bottomConstraint];
+    
+    self.youtube.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void) onYoutubeBecomeReady:(YoutubeView *)setter
 {
-    [youtube playVideo];
+    [self.youtube playVideo];
     
-    [youtube fullscreenVideo:YES];
+    [self.youtube fullscreenVideo:YES];
     
-    [youtube qualityVideo:kYTPlaybackQualityAuto];
+    [self.youtube qualityVideo:kYTPlaybackQualityAuto];
 }
 
 - (void) onYoutubeDidChangeToState:(YoutubeView *)setter state:(YTPlayerState)state

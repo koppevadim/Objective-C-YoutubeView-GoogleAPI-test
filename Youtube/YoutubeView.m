@@ -17,62 +17,69 @@ NSLayoutConstraint *bottomConstraint;
 
 @synthesize delegate;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (id)init
+{
     
-    paddingTop = 100;
-    paddingBottom = 100;
+    self = [super init];
     
-    // disable interface interactions
-    self.view.userInteractionEnabled = NO;
+    if (self)
+    {
+        paddingTop = 100;
+        paddingBottom = 100;
+        
+        // disable interface interactions
+        self.userInteractionEnabled = NO;
+        
+        youtubePlayerView = [[YTPlayerView alloc] init];
+        
+        [self addSubview:youtubePlayerView];
+        
+        youtubePlayerView.delegate = self;
+        
+        // Setting up left constraint
+        leftConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
+                                                      attribute:NSLayoutAttributeLeft
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:self
+                                                      attribute:NSLayoutAttributeLeft
+                                                     multiplier:1.0
+                                                       constant:0];
+        [self addConstraint:leftConstraint];
+        
+        // Setting up right constraint
+        rightConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
+                                                       attribute:NSLayoutAttributeRight
+                                                       relatedBy:NSLayoutRelationEqual
+                                                          toItem:self
+                                                       attribute:NSLayoutAttributeRight
+                                                      multiplier:1.0
+                                                        constant:0];
+        [self addConstraint:rightConstraint];
+        
+        // Setting up top constraint
+        topConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
+                                                     attribute:NSLayoutAttributeTop
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self
+                                                     attribute:NSLayoutAttributeTop
+                                                    multiplier:1.0
+                                                      constant:paddingTop];
+        [self addConstraint:topConstraint];
+        
+        // Setting up bottom constraint
+        bottomConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
+                                                        attribute:NSLayoutAttributeBottom
+                                                        relatedBy:NSLayoutRelationEqual
+                                                           toItem:self
+                                                        attribute:NSLayoutAttributeBottom
+                                                       multiplier:1.0
+                                                         constant:-(paddingBottom)];
+        [self addConstraint:bottomConstraint];
+        
+        youtubePlayerView.translatesAutoresizingMaskIntoConstraints = NO;
+    }
     
-    youtubePlayerView = [[YTPlayerView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
-    [self.view addSubview:youtubePlayerView];
-    
-    youtubePlayerView.delegate = self;
-    
-    // Setting up left constraint
-    leftConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
-                                                  attribute:NSLayoutAttributeLeft
-                                                  relatedBy:NSLayoutRelationEqual
-                                                     toItem:self.view
-                                                  attribute:NSLayoutAttributeLeft
-                                                 multiplier:1.0
-                                                   constant:0];
-    [self.view addConstraint:leftConstraint];
-    
-    // Setting up right constraint
-    rightConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
-                                                   attribute:NSLayoutAttributeRight
-                                                   relatedBy:NSLayoutRelationEqual
-                                                      toItem:self.view
-                                                   attribute:NSLayoutAttributeRight
-                                                  multiplier:1.0
-                                                    constant:0];
-    [self.view addConstraint:rightConstraint];
-    
-    // Setting up top constraint
-    topConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
-                                                 attribute:NSLayoutAttributeTop
-                                                 relatedBy:NSLayoutRelationEqual
-                                                    toItem:self.view
-                                                 attribute:NSLayoutAttributeTop
-                                                multiplier:1.0
-                                                  constant:paddingTop];
-    [self.view addConstraint:topConstraint];
-    
-    // Setting up bottom constraint
-    bottomConstraint = [NSLayoutConstraint constraintWithItem:youtubePlayerView
-                                                    attribute:NSLayoutAttributeBottom
-                                                    relatedBy:NSLayoutRelationEqual
-                                                       toItem:self.view
-                                                    attribute:NSLayoutAttributeBottom
-                                                   multiplier:1.0
-                                                     constant:-(paddingBottom)];
-    [self.view addConstraint:bottomConstraint];
-    
-    youtubePlayerView.translatesAutoresizingMaskIntoConstraints = NO;
+    return self;
 }
 
 /**
@@ -202,7 +209,7 @@ NSLayoutConstraint *bottomConstraint;
     
     [UIView animateWithDuration:0.5
                      animations:^{
-                         [self.view layoutIfNeeded];
+                         [self layoutIfNeeded];
                      }];
 }
 

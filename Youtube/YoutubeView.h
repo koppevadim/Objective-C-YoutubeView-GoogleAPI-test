@@ -14,7 +14,14 @@
 - (void) onYoutubeDidChangeToState:(YoutubeView *) setter state:(YTPlayerState)state;
 @end
 
-@interface YoutubeView : UIViewController <YTPlayerViewDelegate> {
+/**
+ * YTPlayerView is a custom UIView that client developers will use to include YouTube
+ * videos in their iOS applications. It can be instantiated programmatically, or via
+ * Interface Builder. Use the methods YTPlayerView::loadWithVideoId:,
+ * YTPlayerView::loadWithPlaylistId: or their variants to set the video or playlist
+ * to populate the view with.
+ */
+@interface YoutubeView : UIView <YTPlayerViewDelegate> {
     YTPlayerView *youtubePlayerView;
     
     @public CGFloat paddingTop;
