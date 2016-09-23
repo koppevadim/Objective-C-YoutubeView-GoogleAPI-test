@@ -184,6 +184,11 @@ NSLayoutConstraint *bottomConstraint;
     [youtubePlayerView seekToSeconds:seekToSeconds allowSeekAhead:true];
 }
 
+/**
+ * quality of Youtube video
+ *
+ * @param quality
+ */
 - (void) qualityVideo:(YTPlaybackQuality)quality
 {
     [youtubePlayerView setPlaybackQuality:quality];
