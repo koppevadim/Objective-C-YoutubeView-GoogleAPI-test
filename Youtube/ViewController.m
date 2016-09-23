@@ -29,38 +29,38 @@
     
     // Setting up left constraint
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.youtube
-                                                  attribute:NSLayoutAttributeLeft
-                                                  relatedBy:NSLayoutRelationEqual
-                                                     toItem:self.view
-                                                  attribute:NSLayoutAttributeLeft
-                                                 multiplier:1.0
+                                                          attribute:NSLayoutAttributeLeft
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeLeft
+                                                         multiplier:1.0
                                                            constant:0]];
     
     // Setting up right constraint
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.youtube
-                                                   attribute:NSLayoutAttributeRight
-                                                   relatedBy:NSLayoutRelationEqual
-                                                      toItem:self.view
-                                                   attribute:NSLayoutAttributeRight
-                                                  multiplier:1.0
+                                                          attribute:NSLayoutAttributeRight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeRight
+                                                         multiplier:1.0
                                                            constant:0]];
     
     // Setting up top constraint
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.youtube
-                                                 attribute:NSLayoutAttributeTop
-                                                 relatedBy:NSLayoutRelationEqual
-                                                    toItem:self.view
-                                                 attribute:NSLayoutAttributeTop
-                                                multiplier:1.0
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeTop
+                                                         multiplier:1.0
                                                            constant:0]];
     
     // Setting up bottom constraint
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.youtube
-                                                    attribute:NSLayoutAttributeBottom
-                                                    relatedBy:NSLayoutRelationEqual
-                                                       toItem:self.view
-                                                    attribute:NSLayoutAttributeBottom
-                                                   multiplier:1.0
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.0
                                                            constant:0]];
     
     self.youtube.translatesAutoresizingMaskIntoConstraints = NO;
