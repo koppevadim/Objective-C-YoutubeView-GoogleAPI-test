@@ -37,5 +37,6 @@
 - (void) setupVideoId:(NSString*)youtubeVideoId;
 - (void) qualityVideo:(YTPlaybackQuality)quality;
 - (void) fullscreenVideo:(BOOL)activateFullscreenVideo;
+- (void) allowsPictureInPicture:(BOOL)activateFullscreenVideo;
 
 @end

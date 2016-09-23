@@ -213,4 +213,14 @@ NSLayoutConstraint *bottomConstraint;
                      }];
 }
 
+/**
+ * Activate or diactivate Picture in picture mode
+ *
+ * @param activatePictureInPicture setup picture in picture mode
+ */
+- (void) allowsPictureInPicture:(BOOL)activatePictureInPicture
+{
+    [youtubePlayerView webView].allowsPictureInPictureMediaPlayback = &activatePictureInPicture;
+}
+
 @end

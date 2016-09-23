@@ -72,6 +72,8 @@
     
     [self.youtube fullscreenVideo:YES];
     
+    [self.youtube allowsPictureInPicture:YES];
+    
     [self.youtube qualityVideo:kYTPlaybackQualityAuto];
 }
 
