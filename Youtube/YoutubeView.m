@@ -185,7 +185,7 @@ NSLayoutConstraint *bottomConstraint;
 }
 
 /**
- * quality of Youtube video
+ * Quality of Youtube video
  *
  * @param quality value
  */
@@ -226,6 +226,28 @@ NSLayoutConstraint *bottomConstraint;
 - (void) allowsPictureInPicture:(BOOL)activatePictureInPicture
 {
     [youtubePlayerView webView].allowsPictureInPictureMediaPlayback = &activatePictureInPicture;
+}
+
+/**
+ * Clear Youtube Video
+ *
+ */
+- (void) clear
+{
+    delegate = nil;
+    
+    topConstraint = nil;
+    leftConstraint = nil;
+    rightConstraint = nil;
+    bottomConstraint = nil;
+    
+    [youtubePlayerView stopVideo];
+    
+    youtubePlayerView.delegate = nil;
+    
+    [youtubePlayerView removeFromSuperview];
+    
+    youtubePlayerView = nil;
 }
 
 @end

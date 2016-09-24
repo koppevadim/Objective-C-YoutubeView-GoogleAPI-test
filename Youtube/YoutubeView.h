@@ -31,6 +31,7 @@
 @property(nonatomic,weak) id<YoutubeViewDelegate>delegate;
 
 // Expose Methods
+- (void) clear;
 - (void) playVideo;
 - (void) pauseVideo;
 - (void) seekToSeconds:(CGFloat)seekToSeconds;
